@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.menu {
+  background-color: #000000;
+}
+.menu a {
+  display: block;
+  padding: 0 10px;
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 60px;
+  text-decoration: none;
+}
+
+.menu-list {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+.menu-list li:hover > ul {
+  display: inherit;
+}
+.menu-list li {
+  margin: 0px -7px 0 0;
+  display: inline-block;
+  background-color: #000000;
+}
+.menu-list li a:after {
+  content: " +";
+}
+.menu-list li a:only-child:after {
+  content: "";
+}
+.menu-list ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+}
+.menu-list ul li {
+  min-width: 170px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+.menu-list ul ul {
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
+
+li:hover {
+  background-color: #0000FF;
+}
+
+/*# sourceMappingURL=style.css.map */

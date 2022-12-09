@@ -1,0 +1,72 @@
+@import "color.scss";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+.menu{
+    background-color: $background-color-menu;
+      
+  a{
+    display:block;
+    padding:0 10px;
+    color: $color-text;
+    font-size:20px;
+    line-height: 60px;
+    text-decoration:none;
+   }
+
+}
+
+.menu-list {
+    padding:0;
+    margin:0;
+    position: relative;
+
+    li:hover >ul {
+        display: inherit;
+    }
+
+    li{
+        margin: 0px -7px 0 0;
+        display:inline-block;
+        background-color: $background-color-link;
+          
+         a:after {
+             content:  ' +'; 
+            }
+         a:only-child:after { 
+            content: '';
+         }
+    }
+
+    ul{
+        display: none;
+        position: absolute;
+        top: 100%;
+        
+        li{
+            min-width:170px;
+            float:none;
+            display:list-item;
+            position: relative;
+        }
+
+        ul{
+            position: absolute;
+            top:0;
+            left:100%;
+        }
+    }
+}
+
+ li:hover{
+    background-color: $background-color-hover;
+}
+

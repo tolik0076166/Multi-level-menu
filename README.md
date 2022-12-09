@@ -1,1 +1,1 @@
-# Multi-level-menu
+# Menu on several levels. When hovering over Products, a list will appear, and if you hover over Product 2 in this list, another list will appear. When moving the cursor from the Products item to Product 1, the hover effect will remain on the Products item.
